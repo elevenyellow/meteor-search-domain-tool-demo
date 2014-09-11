@@ -1,0 +1,19 @@
+<template name="postPage">
+  <div class="main">
+    <h1><a href="{{pathFor 'projectPage' _id=project._id}}">{{project.title}}</a></h1>
+  </div>
+
+  {{> postItem}}
+  
+  <ul class="comments">
+    {{#each comments}}
+      {{> comment}}
+    {{/each}}
+  </ul>
+  
+  {{#if currentUser}}
+    {{> commentSubmit}}
+  {{else}}
+    <p>Please log in to leave a comment.</p>
+  {{/if}}
+</template>

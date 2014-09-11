@@ -1,0 +1,20 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+insecure
+standard-app-packages
+accounts-password
+nemo64:bootstrap
+less
+iron:router
+accounts-ui-bootstrap-3
+http
+meteorhacks:npm
+
+
+npm-container
+mrt:iron-router-progress
+sacha:spin
+

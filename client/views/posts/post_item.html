@@ -1,0 +1,36 @@
+<template name="postItem">
+  <div class="post" {{attributes}}>
+    <!-- <a href="#" class="upvote btn {{upvotedClass}}">⬆</a> -->
+
+    <div class="voting">
+      <div class="thumb up {{upVotedClass}}"><span class="glyphicon glyphicon-thumbs-up"></span></div>
+      <div class="thumb down {{downVotedClass}}"><span class="glyphicon glyphicon-thumbs-down"></span></div>
+      <div class="votes-count">{{votes}}</div>
+
+    </div>
+
+    <div class="post-content">
+      <h3><a href="{{pathFor 'postPage'}}">{{title}}</a></h3>
+      <p>
+        {{#each availableDomains}}
+         <span class="label label-success">{{this}}</span>
+        {{/each}}
+
+      </p>
+      <p>
+        <!-- {{pluralize votes "Vote"}}, -->
+        <!-- <div class="author">by {{author}}</div> -->
+        {{#each upvoters}}<div class="voter"><span class="glyphicon glyphicon-thumbs-up"></span>{{this}}</div> {{/each}}
+        {{#each downvoters}}<div class="voter"><span class="glyphicon glyphicon-thumbs-down"></span>{{this}}</div> {{/each}}
+        <!-- {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}} -->
+      </p>
+      <div class="clearfix"></div>
+      
+      <a href="{{pathFor 'postPage'}}" class="comments"><div class="glyphicon glyphicon-comment"></div><div class="comments-count">{{commentsCount}}</div></a>
+
+      <div class="remove-item"><span class="glyphicon glyphicon-trash"></span></div>
+      
+    </div>
+    <!-- <a href="{{pathFor 'postPage'}}" class="discuss btn">Discuss</a> -->
+  </div>
+</template>

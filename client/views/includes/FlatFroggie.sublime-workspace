@@ -1,0 +1,636 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"pro",
+				"process"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ce",
+				"centerAtCurrentLocation"
+			],
+			[
+				"map",
+				"mapOptions"
+			],
+			[
+				"ini",
+				"initialLocation"
+			],
+			[
+				"con",
+				"contaierId"
+			],
+			[
+				"image",
+				"imageURL"
+			],
+			[
+				"post",
+				"postImage"
+			],
+			[
+				"absol",
+				"absolutePath"
+			],
+			[
+				"file",
+				"fileObj"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/chemuto/projects/FlatFroggie/client/views/includes/header.html",
+			"settings":
+			{
+				"buffer_size": 1531,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 54.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 300.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/chemuto/projects/FindDomain/client/lib/custom.bootstrap.json",
+		"/home/chemuto/projects/FindDomain/lib/common.js",
+		"/home/chemuto/projects/FindDomain/.meteor/packages",
+		"/home/chemuto/projects/FindDomain/.meteor/versions",
+		"/home/chemuto/projects/FindDomain/smart.json",
+		"/home/chemuto/projects/FindDomain/collections/comments.js",
+		"/home/chemuto/projects/Microscope/client/views/application/layout.html",
+		"/home/chemuto/projects/Microscope/client/views/includes/header.html",
+		"/home/chemuto/projects/Microscope/client/views/posts/post_page.js",
+		"/home/chemuto/projects/Microscope/client/views/posts/post_page.html",
+		"/home/chemuto/projects/Microscope/client/views/notifications/notifications.html",
+		"/home/chemuto/projects/Microscope/public/bootstrap/bootstrap.import.less",
+		"/home/chemuto/projects/Microscope/client/stylesheets/style.css",
+		"/home/chemuto/projects/Microscope/client/stylesheets/style.less",
+		"/home/chemuto/projects/Microscope/smart.json",
+		"/home/chemuto/projects/Microscope/.meteor/packages",
+		"/home/chemuto/projects/Microscope/packages/bootstrap3-less/bootstrap.import.less",
+		"/home/chemuto/projects/FindDomain/client/views/posts/post_edit.js",
+		"/home/chemuto/projects/FindDomain/client/views/includes/header.html",
+		"/home/chemuto/projects/FindDomain/client/views/application/layout.html",
+		"/home/chemuto/projects/FindDomain/client/main.html",
+		"/home/chemuto/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/chemuto/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/chemuto/projects/Microscope/packages/cfs-file/fsFile-server.js",
+		"/home/chemuto/projects/Microscope/packages/cfs-file/fsFile-common.js",
+		"/home/chemuto/projects/Microscope/collections/posts.js",
+		"/home/chemuto/projects/Microscope/server/config.js",
+		"/home/chemuto/projects/Microscope/client/main.html",
+		"/home/chemuto/projects/Microscope/client/lib/google_maps.js",
+		"/home/chemuto/projects/Microscope/client/views/posts/post_maps_page.html",
+		"/home/chemuto/projects/Microscope/client/views/posts/post_map.js",
+		"/home/chemuto/projects/Microscope/client/views/posts/post_list_item.js",
+		"/home/chemuto/projects/Microscope/lib/router.js",
+		"/home/chemuto/projects/Microscope/client/views/posts/post_map.html",
+		"/home/chemuto/projects/Microscope/client/views/posts/post_edit.js",
+		"/home/chemuto/projects/Microscope/server/publications.js",
+		"/home/chemuto/projects/Microscope/client/views/posts/post_submit.html",
+		"/home/chemuto/projects/Microscope/.meteor/local/build/programs/ctl/node_modules/source-map/build/prefix-source-map.jsm",
+		"/home/chemuto/projects/Microscope/.meteor/local/build/programs/server/node_modules/esprima/assets/orion/contentassist/types.js",
+		"/home/chemuto/projects/Microscope/client/views/posts/post_submit.js",
+		"/home/chemuto/projects/Microscope/server/fixtures.js",
+		"/home/chemuto/projects/Microscope/client/views/posts/posts_list.html",
+		"/home/chemuto/projects/Microscope/client/views/posts/post_list_item.html",
+		"/home/chemuto/projects/Microscope/collections/images.js",
+		"/home/chemuto/projects/Microscope/client/views/posts/post_item.js",
+		"/home/chemuto/projects/Microscope/client/views/posts/post_item.html",
+		"/home/chemuto/projects/Microscope/packages/cfs-access-point/tests/server-tests.js",
+		"/home/chemuto/projects/Microscope/.meteor/local/build/programs/server/app/server/publications.js",
+		"/home/chemuto/projects/Microscope/client/views/images/image_submit.js",
+		"/home/chemuto/projects/Microscope/collections/comments.js",
+		"/home/chemuto/projects/Microscope/client/views/images/image_item.html",
+		"/home/chemuto/projects/Microscope/client/views/posts/posts_list.js",
+		"/home/chemuto/projects/Microscope/client/views/images/image_submit.html",
+		"/home/chemuto/projects/Microscope/client/views/images/posts_list.js",
+		"/home/chemuto/projects/Microscope/client/views/images/images_list.html",
+		"/home/chemuto/projects/Microscope/client/views/images/images_list.js",
+		"/home/chemuto/projects/Microscope/lib/common.js",
+		"/home/chemuto/projects/Microscope/client/views/images/image_item.js",
+		"/home/chemuto/projects/Microscope/collections/notifications.js",
+		"/home/chemuto/projects/Microscope/packages/cfs-filesystem/filesystem.client.js",
+		"/home/chemuto/projects/Microscope/packages/cfs-filesystem/filesystem.server.js",
+		"/home/chemuto/projects/Microscope/.meteor/local/build/programs/client/packages/id-map.js",
+		"/home/chemuto/projects/Microscope/client/views/includes/header.js",
+		"/home/chemuto/projects/Microscope/client/helpers/handlebars.js",
+		"/home/chemuto/projects/Microscope/client/views/posts/post_edit.html",
+		"/home/chemuto/projects/Microscope/.meteor/local/build/programs/client/app/collections/posts.js",
+		"/home/chemuto/projects/Microscope/client/views/notifications/notifications.js",
+		"/home/chemuto/projects/Microscope/.meteor/local/build/programs/ctl/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-is-stream-like.js",
+		"/home/chemuto/projects/Microscope/.meteor/local/build/programs/ctl/node_modules/fibers/future.js",
+		"/home/chemuto/projects/Microscope/.meteor/local/build/programs/ctl/node_modules/fibers/test/future-exception.js",
+		"/home/chemuto/projects/Microscope/packages/iron-router/.build/npm/node_modules/connect/node_modules/multiparty/test/fixture/file/funkyfilename.txt",
+		"/home/chemuto/projects/Microscope/.meteor/local/build/programs/ctl/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-proxy-readable.js",
+		"/home/chemuto/projects/Microscope/.meteor/local/build/programs/ctl/node_modules/npm/doc/api/npm-outdated.md",
+		"/home/chemuto/projects/Microscope/client/views/comments/comment.html",
+		"/home/chemuto/projects/Microscope/client/views/comments/comment.js",
+		"/home/chemuto/projects/Microscope/client/views/comments/comment_submit.html",
+		"/home/chemuto/projects/Microscope/client/views/comments/comment_submit.js",
+		"/home/chemuto/projects/Microscope/.meteor/local/build/programs/ctl/node_modules/npm/scripts/clean-old.sh",
+		"/home/chemuto/projects/Microscope/client/views/includes/errors.html",
+		"/home/chemuto/projects/Microscope/client/views/includes/errors.js",
+		"/home/chemuto/projects/Microscope/.meteor/local/build/programs/client/app/client/views/posts/template.post_page.js",
+		"/home/chemuto/projects/Microscope/.meteor/local/build/programs/ctl/node_modules/source-map/build/prefix-utils.jsm",
+		"/home/chemuto/projects/Microscope/client/helpers/errors.js",
+		"/home/chemuto/projects/Microscope/lib/permissions.js",
+		"/home/chemuto/projects/Microscope/client/views/includes/access_denied.html",
+		"/home/chemuto/projects/Microscope/.meteor/local/build/programs/server/app/collections/posts.js",
+		"/home/chemuto/projects/Microscope/.meteor/local/build/programs/client/app/client/views/posts/posts_list.js",
+		"/home/chemuto/projects/Microscope/packages/accounts-ui-bootstrap-dropdown/package.js",
+		"/home/chemuto/projects/microscope/collections/posts.js",
+		"/home/chemuto/projects/microscope/.meteor/packages",
+		"/home/chemuto/projects/microscope/packages/blaze-layout/History.md",
+		"/home/chemuto/projects/microscope/.meteor/local/build/programs/ctl/node_modules/npm/node_modules/retry/lib/retry_operation.js",
+		"/home/chemuto/projects/microscope/.meteor/release",
+		"/home/chemuto/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/chemuto/projects/microscope/packages/iron-layout/layout.js",
+		"/home/chemuto/projects/microscope/packages/blaze-layout/layout.js",
+		"/home/chemuto/projects/microscope/packages/blaze-layout/layout-test.html",
+		"/home/chemuto/projects/microscope/client/views/application/layout.html",
+		"/home/chemuto/projects/microscope/.meteor/local/build/programs/client/packages/autoupdate.js",
+		"/home/chemuto/projects/microscope/packages/blaze-layout/LICENSE.txt",
+		"/home/chemuto/projects/TodoWebApp/LICENSE",
+		"/home/chemuto/projects/Ribbit/src/com/teamtreehouse/ribbit/LoginActivity.java",
+		"/home/chemuto/workspace/BanditsBook-master/r/ucb/plot_ucb1.R",
+		"/home/chemuto/workspace/BanditsBook-master/python/test_ucb1.py",
+		"/home/chemuto/workspace/BanditsBook-master/python/test_standard.py",
+		"/home/chemuto/workspace/BanditsBook-master/r/epsilon_greedy/plot_standard.R",
+		"/home/chemuto/workspace/BanditsBook-master/python/demo.py",
+		"/home/chemuto/workspace/BanditsBook-master/python/core.py",
+		"/home/chemuto/workspace/BanditsBook-master/python/testing.py",
+		"/home/chemuto/workspace/BanditsBook-master/python/algorithms/ucb/test_ucb1.py",
+		"/home/chemuto/workspace/quizzes/.env/src/django-experiments/experiments/templatetags/experiments.py",
+		"/home/chemuto/workspace/quizzes/.env/src/django-experiments/experiments/templates/nexus/experiments/index.html",
+		"/home/chemuto/workspace/quizzes/.env/src/django-experiments/experiments/urls.py",
+		"/home/chemuto/workspace/quizzes/.env/src/django-experiments/experiments/nexus_modules.py",
+		"/home/chemuto/workspace/quizzes/.env/src/django-experiments/experiments/templatetags/experiment_helpers.py",
+		"/home/chemuto/workspace/deesmo/.gitignore",
+		"/home/chemuto/workspace/deesmo/deesmo/settings/en/en.py",
+		"/home/chemuto/workspace/deesmo/deesmo/settings/base.py",
+		"/home/chemuto/workspace/deesmo/deesmo/settings/util.py",
+		"/home/chemuto/workspace/deesmo/deesmo/apps/searchtag/management/commands/generate_tags_from_wmt_queries.py",
+		"/home/chemuto/workspace/deesmo/deesmo/utils/adsense_filters.py",
+		"/home/chemuto/workspace/deesmo/deesmo/apps/video/management/commands/update_most_visited_videos.py",
+		"/home/chemuto/workspace/deesmo/deesmo/settings/es/es.py",
+		"/home/chemuto/workspace/deesmo/deesmo/settings/pt/pt.py",
+		"/home/chemuto/workspace/deesmo/deesmo/apps/video/management/commands/testing.py",
+		"/home/chemuto/workspace/deesmo/deesmo/apps/searchtag/management/commands/save_all_tags.py",
+		"/home/chemuto/workspace/deesmo/requirements.txt",
+		"/home/chemuto/workspace/deesmo/deesmo/templates/base.html"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"account.ui",
+			"cmather",
+			"false",
+			"js",
+			"space",
+			"indent",
+			"\n ",
+			"        \n",
+			"page",
+			"home",
+			"opacity",
+			"content",
+			"    \n",
+			"	",
+			"tab",
+			"ctrl+p",
+			"open",
+			"\");\n",
+			"to_dict",
+			" \n",
+			"media",
+			"distinto",
+			"print",
+			"name",
+			"tredua.com",
+			"media"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"true",
+			"    ",
+			"blidio.com"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/chemuto/projects/FlatFroggie/client/views/includes/header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1531,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1531
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "FlatFroggie.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"header",
+				"client/views/includes/header.html"
+			],
+			[
+				"common",
+				"lib/common.js"
+			],
+			[
+				"posts",
+				"collections/posts.js"
+			],
+			[
+				"head",
+				"client/views/includes/header.html"
+			],
+			[
+				"rour",
+				"lib/router.js"
+			],
+			[
+				"styles",
+				"client/stylesheets/style.css"
+			],
+			[
+				"sty",
+				"client/stylesheets/style.css"
+			],
+			[
+				"rou",
+				"lib/router.js"
+			],
+			[
+				"publi",
+				"server/publications.js"
+			],
+			[
+				"fix",
+				"server/fixtures.js"
+			],
+			[
+				"post_item",
+				"client/views/posts/post_item.html"
+			],
+			[
+				"router",
+				"lib/router.js"
+			],
+			[
+				"image_li",
+				"client/views/images/images_list.html"
+			],
+			[
+				"post_list",
+				"client/views/posts/posts_list.js"
+			],
+			[
+				"post_list.h",
+				"client/views/posts/posts_list.html"
+			],
+			[
+				"post",
+				"client/views/posts/post_edit.js"
+			],
+			[
+				"posts.",
+				"collections/posts.js"
+			],
+			[
+				"fixture",
+				"server/fixtures.js"
+			],
+			[
+				"fixtu",
+				"server/fixtures.js"
+			],
+			[
+				"posts.j",
+				"collections/posts.js"
+			],
+			[
+				"publica",
+				"server/publications.js"
+			],
+			[
+				"post_pa",
+				"client/views/posts/post_page.html"
+			],
+			[
+				"comm",
+				"collections/comments.js"
+			],
+			[
+				"commen",
+				"client/views/comments/comment.html"
+			],
+			[
+				"post_page",
+				"client/views/posts/post_page.html"
+			],
+			[
+				"post_ite",
+				"client/views/posts/post_item.html"
+			],
+			[
+				"fi",
+				"server/fixtures.js"
+			],
+			[
+				"errors",
+				"client/views/includes/errors.js"
+			],
+			[
+				"error",
+				"client/views/includes/errors.html"
+			],
+			[
+				"post_su",
+				"client/views/posts/post_submit.js"
+			],
+			[
+				"post_ed",
+				"client/views/posts/post_edit.js"
+			],
+			[
+				"lay",
+				"client/views/application/layout.html"
+			],
+			[
+				"posts_lis",
+				"client/views/posts/posts_list.js"
+			],
+			[
+				"postsubmit",
+				"client/views/posts/post_submit.html"
+			],
+			[
+				"hea",
+				"client/views/includes/header.html"
+			],
+			[
+				"layout",
+				"client/views/application/layout.html"
+			],
+			[
+				"layou",
+				"client/views/application/layout.html"
+			],
+			[
+				".git",
+				".gitignore"
+			],
+			[
+				"req",
+				"requirements.txt"
+			],
+			[
+				"pt.",
+				"deesmo/settings/pt/pt.py"
+			],
+			[
+				"es.",
+				"deesmo/settings/es/es.py"
+			],
+			[
+				"save",
+				"deesmo/apps/searchtag/management/commands/save_all_tags.py"
+			],
+			[
+				"requ",
+				"requirements.txt"
+			],
+			[
+				"adsen",
+				"deesmo/utils/adsense_filters.py"
+			],
+			[
+				"wmt",
+				"deesmo/apps/searchtag/management/commands/generate_tags_from_wmt_queries.py"
+			],
+			[
+				"base",
+				"deesmo/settings/base.py"
+			],
+			[
+				"mobile",
+				"deesmo/settings/en_mobile/mobile.py"
+			],
+			[
+				"moil",
+				"deesmo/static/css/base-mobile.css"
+			],
+			[
+				"en",
+				"deesmo/settings/en/en.py"
+			],
+			[
+				"home",
+				"deesmo/templates/home.html"
+			],
+			[
+				"es",
+				"deesmo/settings/es/es.py"
+			],
+			[
+				"media",
+				"deesmo/apps/core/templatetags/media.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/projects/FindDomain/client/views/includes/finddomain.sublime-project"
+			],
+			[
+				"ryv",
+				"~/workspace/ryv/ryv.sublime-project"
+			],
+			[
+				"a",
+				"~/workspace/appapar/appapar.sublime-project"
+			],
+			[
+				"appa",
+				"~/workspace/appapar/appapar.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 246.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
