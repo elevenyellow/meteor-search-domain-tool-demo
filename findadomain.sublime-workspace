@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"spinn",
+				"spinner"
+			],
+			[
+				"spinner",
+				"spinner-container"
+			],
+			[
+				"stop",
+				"stop-search"
+			],
+			[
+				"loo",
+				"loopTotal"
+			],
+			[
+				"loop",
+				"loopCounter"
+			],
+			[
+				"pre",
+				"prefixes_list"
+			],
+			[
+				"domain",
+				"domainLookup"
+			],
+			[
+				"a",
+				"attributes"
+			],
+			[
+				"is",
+				"isClient"
+			],
+			[
+				"m",
+				"Meteor"
+			],
+			[
 				"post",
 				"postsLimit"
 			],
@@ -127,6 +167,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "README.markdown",
+			"settings":
+			{
+				"buffer_size": 16,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -172,25 +220,32 @@
 	},
 	"file_history":
 	[
+		"/home/chemuto/projects/FindDomain/findadomain.sublime-project",
+		"/home/chemuto/projects/FindDomain/lib/router.js",
+		"/home/chemuto/projects/FindDomain/client/views/projects/project_page.html",
+		"/home/chemuto/projects/FindDomain/collections/domainLookups.js",
+		"/home/chemuto/projects/FindDomain/lib/common.js",
+		"/home/chemuto/projects/FindDomain/client/views/search-results/search_result_page.js",
+		"/home/chemuto/projects/FindDomain/client/views/search-results/search_result_page.html",
+		"/home/chemuto/projects/FindDomain/client/views/search-results/search_result_list.js",
+		"/home/chemuto/projects/FindDomain/.meteor/.gitignore",
+		"/home/chemuto/projects/FindDomain/client/stylesheets/style.less",
+		"/home/chemuto/projects/FindDomain/client/views/posts/posts_list.js",
+		"/home/chemuto/projects/FindDomain/client/views/posts/posts_list.html",
+		"/home/chemuto/projects/FindDomain/client/views/projects/project_page.js",
+		"/home/chemuto/projects/FindDomain/client/views/posts/post_item.js",
 		"/home/chemuto/projects/FindDomain/FlatFroggie.sublime-project",
 		"/home/chemuto/projects/FindDomain/client/views/projects/projects_list.js",
-		"/home/chemuto/projects/FindDomain/client/views/posts/posts_list.js",
 		"/home/chemuto/projects/FindDomain/client/views/projects/project_submit.js",
-		"/home/chemuto/projects/FindDomain/lib/router.js",
-		"/home/chemuto/projects/FindDomain/client/stylesheets/style.less",
 		"/home/chemuto/projects/FindDomain/client/lib/common.js",
-		"/home/chemuto/projects/FindDomain/client/views/posts/posts_list.html",
 		"/home/chemuto/projects/FindDomain/client/views/posts/post_item.html",
 		"/home/chemuto/projects/FindDomain/client/views/projects/project_item.js",
-		"/home/chemuto/projects/FindDomain/client/views/projects/project_page.js",
 		"/home/chemuto/projects/FindDomain/client/lib/clientCollections.js",
 		"/home/chemuto/projects/FindDomain/collections/Positions.js",
-		"/home/chemuto/projects/FindDomain/client/views/projects/project_page.html",
 		"/home/chemuto/projects/FindDomain/client/views/includes/loading.html",
 		"/home/chemuto/projects/FindDomain/packages/npm-container/.build.npm-container/npm/node_modules/node-whois/node_modules/optimist/example/line_count_options.js",
 		"/home/chemuto/projects/FindDomain/client/views/application/layout.html",
 		"/home/chemuto/projects/FindDomain/.meteor/local/build/programs/web.browser/app/client/views/posts/post_item.js",
-		"/home/chemuto/projects/FindDomain/client/views/posts/post_item.js",
 		"/home/chemuto/projects/FindDomain/.meteor/local/build/programs/web.browser/app/client/views/posts/posts_list.js",
 		"/home/chemuto/projects/FindDomain/client/views/projects/project_item.html",
 		"/home/chemuto/projects/FindDomain/client/views/search-results/search-result-tab.html",
@@ -198,10 +253,8 @@
 		"/home/chemuto/projects/FindDomain/client/views/search-results/search_result_item.js",
 		"/home/chemuto/projects/FindDomain/client/views/includes/errors.html",
 		"/home/chemuto/projects/FindDomain/.meteor/packages",
-		"/home/chemuto/projects/FindDomain/client/views/search-results/search_result_list.js",
 		"/home/chemuto/projects/FindDomain/client/lib/prefixes.js",
 		"/home/chemuto/projects/FindDomain/client/views/search-results/search_result_list.html",
-		"/home/chemuto/projects/FindDomain/lib/common.js",
 		"/home/chemuto/projects/FindDomain/client/views/search-results/search_result_item.html",
 		"/home/chemuto/projects/FindDomain/collections/searchResults.js",
 		"/home/chemuto/projects/FindDomain/client/views/posts/post_submit.js",
@@ -294,16 +347,11 @@
 		"/home/chemuto/projects/Microscope/client/views/images/posts_list.js",
 		"/home/chemuto/projects/Microscope/client/views/images/images_list.html",
 		"/home/chemuto/projects/Microscope/client/views/images/images_list.js",
-		"/home/chemuto/projects/Microscope/lib/common.js",
-		"/home/chemuto/projects/Microscope/client/views/images/image_item.js",
-		"/home/chemuto/projects/Microscope/collections/notifications.js",
-		"/home/chemuto/projects/Microscope/packages/cfs-filesystem/filesystem.client.js",
-		"/home/chemuto/projects/Microscope/packages/cfs-filesystem/filesystem.server.js",
-		"/home/chemuto/projects/Microscope/.meteor/local/build/programs/client/packages/id-map.js"
+		"/home/chemuto/projects/Microscope/lib/common.js"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -319,6 +367,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"invisible",
+			"invisi",
 			"\n      ",
 			"\n    ",
 			"spinner",
@@ -384,8 +434,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "README.markdown",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 16,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -436,12 +515,16 @@
 		"selected_items":
 		[
 			[
-				"router",
-				"lib/router.js"
+				"sty",
+				"client/stylesheets/style.less"
 			],
 			[
 				"style",
 				"client/stylesheets/style.less"
+			],
+			[
+				"router",
+				"lib/router.js"
 			],
 			[
 				"post_item",
@@ -490,10 +573,6 @@
 			[
 				"projects",
 				"client/views/projects/projects_list.html"
-			],
-			[
-				"sty",
-				"client/stylesheets/style.less"
 			],
 			[
 				"submi",
@@ -734,10 +813,10 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": true,
+	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 228.0,
+	"side_bar_visible": true,
+	"side_bar_width": 328.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

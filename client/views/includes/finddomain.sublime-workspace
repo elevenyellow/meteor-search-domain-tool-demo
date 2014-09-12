@@ -131,7 +131,7 @@
 			"file": "/home/chemuto/projects/FindDomain/client/views/posts/post_item.js",
 			"settings":
 			{
-				"buffer_size": 2336,
+				"buffer_size": 2380,
 				"line_ending": "Unix"
 			}
 		},
@@ -139,7 +139,7 @@
 			"file": "/home/chemuto/projects/FindDomain/client/views/projects/project_page.html",
 			"settings":
 			{
-				"buffer_size": 1050,
+				"buffer_size": 1004,
 				"line_ending": "Unix"
 			}
 		},
@@ -147,7 +147,7 @@
 			"file": "/home/chemuto/projects/FindDomain/lib/router.js",
 			"settings":
 			{
-				"buffer_size": 4675,
+				"buffer_size": 4564,
 				"line_ending": "Unix"
 			}
 		},
@@ -179,7 +179,7 @@
 			"file": "/home/chemuto/projects/FindDomain/client/views/projects/project_page.js",
 			"settings":
 			{
-				"buffer_size": 666,
+				"buffer_size": 690,
 				"line_ending": "Unix"
 			}
 		}
@@ -449,15 +449,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2336,
+						"buffer_size": 2380,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1740,
-								1740
+								0,
+								0
 							]
 						],
 						"settings":
@@ -479,15 +479,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1050,
+						"buffer_size": 1004,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								824,
-								824
+								0,
+								0
 							]
 						],
 						"settings":
@@ -509,15 +509,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4675,
+						"buffer_size": 4564,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								994,
-								994
+								0,
+								0
 							]
 						],
 						"settings":
@@ -623,15 +623,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 666,
+						"buffer_size": 690,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								653,
-								653
+								0,
+								0
 							]
 						],
 						"settings":

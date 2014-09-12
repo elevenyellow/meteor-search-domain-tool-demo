@@ -341,14 +341,25 @@ a:hover{
         color:@gray-light;
         cursor: default;
     }
-    .continue-search{
+    .pause-search{
+        float:left;
+        color: @brand-info;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 5px;
+    }
+    .pause-search.disabled{
+        color:@gray-light;
+        cursor: default;
+    }
+    .resume-search{
         float:left;
         color: @brand-success;
         cursor: pointer;
         font-size: 14px;
         padding: 5px;
     }
-    .continue-search.disabled{
+    .resume-search.disabled{
         color:@gray-light;
         cursor: default;
     }
