@@ -3,6 +3,6 @@ Template.postPage.helpers({
     return Comments.find({postId: this._id});
   }, 
   project: function(){
-    return Projects.findOne(Session.get('currentProjectId'));
+    return Projects.findOne(this.projectId);
   }
 });

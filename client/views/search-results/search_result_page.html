@@ -1,0 +1,39 @@
+<template name="searchResultPage">
+    <div class="main">
+      <h1>{{project.title}}</h1>
+  </div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li><a href="{{pathFor 'newProjectPage' _id=project._id }}" role="tab">Candidates list</a></li>
+      <li class="active"><a href="{{pathFor 'searchResultPage' _id=project._id }}" role="tab">Search tool</a></li>
+  </ul>
+
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane active" id="search-tool">
+      <form class="form-inline main" id="add-tag-form" role="form">
+          <fieldset id="add-tag-form-fieldset" {{fieldsetAttributes}} disabled={{#unless isStopped}}"true"{{/unless}}>
+              <input type="hidden" name="projectId" value="{{project._id}}">
+              <div class="form-group" id="post-submit-input-wp">
+                  <label class="sr-only" for="post-submit-input-id">Tags</label>
+                  <input value="{{searchText}}" type="text" class="form-control" id="post-submit-input-id" name="title" placeholder="Enter one word">
+                  <button type="submit" class="btn btn-primary">Search</button>
+              </div>
+          </fieldset>
+      </form>
+      <div class="main search-results-header">
+          <div class="spinner-wp"> <img src="/images/gif-load.gif"></div>
+          <div class="stop-search {{#if isStopped}}disabled{{/if}}"><span class="glyphicon glyphicon-stop"></span> Stop</div>
+          <div class="pause-search {{#unless isRunning}}disabled{{/unless}}"><span class="glyphicon glyphicon-pause"></span> Pause</div>
+          <div class="resume-search {{#unless isPaused}}disabled{{/unless}}"><span class="glyphicon glyphicon-play"></span> Resume</div>
+          <div class="remove-all"><span class="glyphicon glyphicon-trash"></span> All</div>
+      </div>
+
+      {{> searchResultList}}
+
+  </div>
+</div>
+
+</template>
