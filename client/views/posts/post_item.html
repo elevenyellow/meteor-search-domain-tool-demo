@@ -10,7 +10,7 @@
     </div>
 
     <div class="post-content">
-      <h3><a href="{{pathFor 'postPage'}}">{{title}}</a></h3>
+      <h3><a href="{{pathFor 'postPage' projectId=projectId _id=_id}}">{{title}}</a></h3>
       <p>
         {{#each availableDomains}}
          <span class="label label-success">{{this}}</span>
