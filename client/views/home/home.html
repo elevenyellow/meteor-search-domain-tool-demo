@@ -1,0 +1,24 @@
+<template name="home">
+    {{#if currentUser}}
+        <div class="main projects">
+            {{#each projects}}
+                {{> projectItem}}
+            {{/each}}
+        
+            <a href="{{ pathFor 'projectSubmit'}}"><span class="glyphicon glyphicon-plus-sign"></span> add project</a>
+            
+        </div>
+    {{else}}
+        <div class="jumbotron main">
+            <div class="container">
+                <h1>Find your domain now!</h1>
+                <p>
+                    The simplest way of finding a domain name for your project
+                </p>
+                <p>
+                    <a class="btn btn-primary btn-lg">Find a Domain</a>
+                </p>
+            </div>
+        </div>
+    {{/if}}
+</template>

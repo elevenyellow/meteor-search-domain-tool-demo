@@ -28,3 +28,7 @@ Meteor.publish('projects', function() {
 Meteor.publish('singleProject', function(id) {
   return id && Projects.find(id);
 });
+
+Meteor.publish('projectMessages', function(projectId, options) {
+  return Messages.find({projectId: projectId}, options);
+});

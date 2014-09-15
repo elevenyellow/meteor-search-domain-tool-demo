@@ -1,10 +1,14 @@
 <template name="projectsList">
-  <div class="main projects">
-    {{#each projects}}
-      {{> projectItem}}
-    {{/each}}
-    
-    <a href="{{ pathFor 'projectSubmit'}}"><span class="glyphicon glyphicon-plus-sign"></span> add project</a>
-    
-  </div>
+    {{#if currentUser}}
+        <div class="main projects">
+            {{#each projects}}
+                {{> projectItem}}
+            {{/each}}
+        
+            <a href="{{ pathFor 'projectSubmit'}}"><span class="glyphicon glyphicon-plus-sign"></span> add project</a>
+            
+        </div>
+    {{else}}
+        Please signin/up first
+    {{/if}}
 </template>
