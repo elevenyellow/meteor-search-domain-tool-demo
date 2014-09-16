@@ -17,4 +17,5 @@ npm-container
 mrt:iron-router-progress
 sacha:spin
 accounts-ui
+houston:admin
 

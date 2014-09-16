@@ -32,3 +32,7 @@ Meteor.publish('singleProject', function(id) {
 Meteor.publish('projectMessages', function(projectId, options) {
   return Messages.find({projectId: projectId}, options);
 });
+
+Meteor.publish('prefixes', function() {
+  return Prefixes.find({active: true});
+});

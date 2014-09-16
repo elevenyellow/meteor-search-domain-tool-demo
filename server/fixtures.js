@@ -1,4 +1,13 @@
 // Fixture data 
+
+if (Prefixes.find().count() === 0) {
+  console.log("loading fixtures for Prefixes");
+  for (var i = 0; i < prefixes_list.length; i++) {
+    Prefixes.insert({name:prefixes_list[i], active: true});
+  };
+}
+
+
 if (Posts.find().count() === 0) {
   var now = new Date().getTime();
   

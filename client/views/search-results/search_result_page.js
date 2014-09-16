@@ -1,16 +1,18 @@
+var prefixes;
+
 var myInterval = 0;
 var loopCounter = 0;
 var iFrequency = 1000;
-var loopTotal = prefixes_list.length;
+var loopTotal = 0;
 var searchText = '';
 var isPaused = false;
 
 function _checkDomain(title, i, check_type) {
-  console.log("_checkDomain", i, check_type, prefixes_list[i]);
+  console.log("_checkDomain", i, check_type, prefixes[i]);
   if(check_type == 'prefix'){
-    var domain = prefixes_list[i] + title + '.com';
+    var domain = prefixes[i].name + title + '.com';
   } else {
-    var domain = title + prefixes_list[i] + '.com';
+    var domain = title + prefixes[i].name + '.com';
   }
   
   console.log('domain: ', domain);
@@ -28,7 +30,9 @@ function _checkDomain(title, i, check_type) {
 }
 
 function stopSearch(){
-  clearInterval(myInterval);  // stop
+  console.log('stopSearch()');
+  Meteor.clearInterval(myInterval);  // stop
+  myInterval = 0;
   loopCounter = 0;
   $('#add-tag-form-fieldset').prop('disabled', false);
   $('.pause-search').addClass('disabled');
@@ -38,7 +42,7 @@ function stopSearch(){
 }
 
 function pauseSearch(){
-  clearInterval(myInterval);
+  Meteor.clearInterval(myInterval);
   isPaused = true;
   $('.stop-search').removeClass('disabled');
   $('.pause-search').addClass('disabled');
@@ -52,6 +56,7 @@ function resumeSearch(){
 }
 
 function startSearch() {
+    console.log('startSearch()');
     $('#add-tag-form-fieldset').prop('disabled', true);
     searchText =  $('#post-submit-input-id').val();
     console.log("searchText: ", searchText);
@@ -61,20 +66,30 @@ function startSearch() {
     $('.spinner-wp').show();
     
     myInterval = Meteor.setInterval(function () {
-        if(loopCounter > (loopTotal - 2)) {
+        if(loopCounter > (loopTotal - 1)) {
           stopSearch();
+        } else {
+          console.log("loopCounter", loopCounter, "loopTotal", loopTotal);
+          _checkDomain(searchText, loopCounter, 'prefix');
+          _checkDomain(searchText, loopCounter, 'sufix');
+          loopCounter = loopCounter + 1;
         }
-        console.log("loopCounter", loopCounter, "loopTotal", loopTotal);
-        _checkDomain(searchText, loopCounter, 'prefix');
-        _checkDomain(searchText, loopCounter, 'sufix');
-        loopCounter = loopCounter + 1;
+        
     }, iFrequency );  // run
 }
 
-
+Template.searchResultPage.rendered = function(){
+  prefixes = this.data.prefixes.fetch();
+  loopTotal = prefixes.length;
+  console.log('searchResultPage.rendered');
+  console.log('prefixes', prefixes);
+  console.log('myInterval', myInterval);
+  console.log('isPaused', isPaused);
+}
 
 Template.searchResultPage.events({
   'submit #add-tag-form': function(e) {
+    console.log('submit #add-tag-form');
     e.preventDefault();
     startSearch();
 
@@ -86,18 +101,29 @@ Template.searchResultPage.events({
   },
 
   'click .stop-search': function(e) {
-    e.preventDefault();
-    stopSearch();
+    // console.log("$(e.target).hasClass('disabled')", $(e.target).hasClass('disabled'));
+    if(!$('.stop-search').hasClass('disabled')){
+      console.log('click .stop-search');
+      e.preventDefault();
+      stopSearch();
+      console.log('myInterval', myInterval);
+    }
+    
+
   },
 
   'click .pause-search': function(e) {
-    e.preventDefault();
-    pauseSearch();
+    if(!$('.pause-search').hasClass('disabled')){
+      e.preventDefault();
+      pauseSearch();
+    }
   },
 
   'click .resume-search': function(e) {
-    e.preventDefault();
-    resumeSearch();
+    if(!$('.resume-search').hasClass('disabled')){
+      e.preventDefault();
+      resumeSearch();
+    }
   }  
 
 });
