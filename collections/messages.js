@@ -25,7 +25,7 @@ Meteor.methods({
     
     var messageId = Messages.insert(message);
 
-    console.log('messageId after insert: ' + messageId)
+    // console.log('messageId after insert: ' + messageId)
     
 
     return messageId;
