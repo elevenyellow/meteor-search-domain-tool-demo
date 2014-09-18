@@ -1,5 +1,5 @@
 <template name="projectPage">
-  <div class="main">
+  <div class="project-title">
     <h1>{{project.title}}</h1>
   </div>
 
@@ -19,7 +19,7 @@
         <p>Please log in to add a domain name candidate</p>
       {{/if}}
 
-      <ul class="main nav nav-pills">
+      <ul class="nav nav-pills">
         <li class="{{tabClass 'best'}}"><a class="remove-positions" href="{{pathFor 'bestProjectPage' _id=project._id}}">Best</a></li>
         <li class="{{tabClass 'new'}}"><a class="remove-positions" href="{{pathFor 'newProjectPage' _id=project._id }}">Newest</a></li>
       </ul>

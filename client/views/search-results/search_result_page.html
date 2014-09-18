@@ -1,5 +1,5 @@
 <template name="searchResultPage">
-    <div class="main">
+    <div class="project-title">
       <h1>{{project.title}}</h1>
   </div>
 
@@ -14,7 +14,7 @@
   <!-- Tab panes -->
   <div class="tab-content">
     <div class="tab-pane active" id="search-tool">
-      <form class="form-inline main" id="add-tag-form" role="form">
+      <form class="form-inline" id="add-tag-form" role="form">
           <fieldset id="add-tag-form-fieldset" {{fieldsetAttributes}} disabled={{#unless isStopped}}"true"{{/unless}}>
               <input type="hidden" name="projectId" value="{{project._id}}">
               <div class="form-group" id="post-submit-input-wp">
