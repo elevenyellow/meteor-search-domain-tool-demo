@@ -1,6 +1,6 @@
 function resizer() {
-    var newHeight = ''+$(window).height()-$('.nav-tabs').position().top-128+'px';
-    console.log('newHeight', newHeight);
+    var newHeight = ''+$(window).height()-$('.nav-tabs').position().top-148+'px';
+    // console.log('newHeight', newHeight);
     $('.messages-wp').css('height', newHeight);
 }
 
@@ -24,7 +24,7 @@ Template.messages.events({
 
     $('#message-content-input').val('');
     
-    console.log("message:", message);
+    // console.log("message:", message);
 
     Meteor.call('message', message, function(error, id) {
       if (error) {
@@ -41,7 +41,7 @@ Template.messages.events({
 });
 
 Template.messages.rendered = function() {
-  console.log('Template.messages.rendered');
+  // console.log('Template.messages.rendered');
   resizer();
   $('.messages-wp').scrollTop($('.messages-wp').prop('scrollHeight'));
 };
@@ -51,12 +51,12 @@ Template.message.rendered = function() {
 };
 
 Template.messages.created = function() {
-  console.log('Template.messages.created');
+  // console.log('Template.messages.created');
   startResize();
   
 };
 
 Template.messages.destroyed = function() {
-  console.log('Template.messages.destroyed');
+  // console.log('Template.messages.destroyed');
   endResize();
 };

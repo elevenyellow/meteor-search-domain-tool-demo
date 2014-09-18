@@ -1,4 +1,30 @@
-@import "/client/lib/custom.bootstrap.import.less";
+
+@import "/client/stylesheets/bootstrap-3.2.0/less/bootstrap.import.less";
+@import "/client/stylesheets/Flat-UI-master/less/flat-ui.import.less";
+
+// .debug(@var) {
+//   &:after {
+//     content: "@{var}";
+//     font-size: 20px;
+//     background-color: #fff;
+//     border: 1px solid red;
+//     padding: 10px;
+//     border-radius: 5px;
+//     color: red;
+//     font-weight: bold;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//   }
+// }
+
+// .debug(@icon-font-path);
+
+@icon-font-path:  "/bootstrap-3.2.0/fonts/";
+@flat-icon-font-path:  "/Flat-UI-master/fonts/glyphicons/";
+
+@local-font-path: "/Flat-UI-master/fonts/lato/";
+
 .grid-block, .main, .post, .comments li, .comment-form {
     background: #fff;
     -webkit-border-radius: 3px;
@@ -20,6 +46,11 @@ body {
 h1{
     margin:0;
     font-size: 27px;
+}
+
+h3{
+    margin: 5px 0 5px 0;
+    font-size: 23px; 
 }
 
 a:hover{
@@ -381,4 +412,33 @@ a:hover{
 
 .message {
     margin: 10px 0 0 0;
+}
+
+.dropdown-toggle .caret {
+    margin-left: 3px;
+    border-top-color: #4b6075;
+    border-bottom-color: #4b6075;
+}
+.dropdown-toggle .caret:hover {
+
+}
+
+#login-dropdown-list{
+    bottom:2px;
+    a {
+        padding: 15px 7px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 23px;
+        color: #fff;
+    }
+    a:hover{
+        color: @green-sea;
+        border-top-color: @green-sea;
+        border-bottom-color: @green-sea;
+    }
+    a:hover .caret{
+        border-bottom-color: @turquoise;
+        border-top-color: @turquoise;
+    }
 }

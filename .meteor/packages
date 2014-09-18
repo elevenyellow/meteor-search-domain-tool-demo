@@ -6,7 +6,6 @@
 insecure
 standard-app-packages
 accounts-password
-nemo64:bootstrap
 less
 iron:router
 http
@@ -16,8 +15,7 @@ meteorhacks:npm
 npm-container
 mrt:iron-router-progress
 sacha:spin
-accounts-ui
 houston:admin
 meteorhacks:kadira
 meteorhacks:zones
-
+ian:accounts-ui-bootstrap-3
