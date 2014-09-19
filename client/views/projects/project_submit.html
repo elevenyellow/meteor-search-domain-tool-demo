@@ -1,16 +1,17 @@
 <template name="projectSubmit">
-  <form>
-    <div class="control-group">
-        <label class="control-label" for="title">Title</label>
-        <div class="controls">
-            <input name="title" type="text" value="" placeholder="Name your project"/>
-        </div>
-    </div>
+  
 
-    <div class="control-group">
-        <div class="controls">
-            <input type="submit" value="Submit" class="btn btn-primary"/>
-        </div>
-    </div>
+  <form class="form-inline" role="form">
+      <legend>Add a project</legend>
+  
+      <div class="form-group">
+          <label class="sr-only" for="exampleInputEmail2">Name</label>
+          <input type="text" name="title" class="form-control" id="" placeholder="Name your project">
+      </div>
+  
+      
+  
+      <button type="submit" class="btn btn-primary">Submit</button>
   </form>
+
 </template>

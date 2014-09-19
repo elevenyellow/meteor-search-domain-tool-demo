@@ -188,15 +188,15 @@ a:hover{
             position: absolute;
             top: 13px;
             right: 15px;
-            font-size: 16px;
-            .glyphicon {
-                padding: 3px 5px 0 0;
+            font-size: 15px;
+            .icon {
+                padding: 2px 5px 0 0;
                 float: left;
             }
             .comments-count {
                 float: left;
                 font-size: 14px;
-                padding: 1px 0 0 0;
+                padding: 3px 0 0 0;
             }
         }
         .comments:focus {
@@ -348,8 +348,10 @@ a:hover{
             float: left;
             color:@brand-success;
             cursor: pointer;
-            .glyphicon {
-                font-size: 20px;
+            margin-top: 2px;
+            line-height: 1;
+            .icon {
+                // font-size: 20px;
             }
         }
         .add-to-candidates:hover{
@@ -366,9 +368,9 @@ a:hover{
 
         .remove-from-candidates {
             position: absolute;
-            bottom: 12px;
+            bottom: 9px;
             right: 15px;
-            font-size: 16px;
+            font-size: 15px;
             color: @pomegranate;
             cursor: pointer;
         }
@@ -393,8 +395,9 @@ a:hover{
         float:right;
         color: @pomegranate;
         cursor: pointer;
-        font-size: 14px;
+        font-size: 15px;
         padding: 5px;
+        line-height: 1;
     }
     .stop-search{
         float:left;
@@ -447,6 +450,7 @@ a:hover{
 
 .message {
     margin: 10px 0 0 0;
+    font-size: 14px;
 }
 
 .dropdown-toggle .caret {
@@ -481,4 +485,24 @@ a:hover{
 #add-candidate-form, #add-tag-form{
     padding:15px 0 10px 0;
 
+}
+
+.projects{
+
+    a:hover, .project:hover, .add-project:hover{
+        .opacity(0.8);
+    }
+
+    h3{
+        font-size: 17px;
+        color: @wet-asphalt;
+    }
+
+    .add-project{
+        font-size: 17px;
+        color: @wet-asphalt;
+        .icon{
+            color:@green-sea;
+        }
+    }
 }

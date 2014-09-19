@@ -1,7 +1,8 @@
 <template name="projectItem">
-  <div class="project">
-    <div class="project-content">
-      <h3><a href="{{pathFor 'projectPage'}}">{{this.title}}</a></h3>
-    </div>
-  </div>
+    <a href="{{pathFor 'projectPage'}}">
+        <div class="main project">
+            <h3>{{this.title}}</h3>
+        </div>
+    </a>
+  
 </template>
