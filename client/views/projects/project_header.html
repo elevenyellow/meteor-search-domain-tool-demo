@@ -1,0 +1,12 @@
+<template name="projectHeader">
+    <div class="project-title">
+      <h1>{{project.title}}</h1>
+    </div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="{{tabClass 'list'}}"><a href="{{pathFor 'newProjectPage' _id=project._id }}" role="tab">List</a></li>
+      <li class="{{tabClass 'generator'}}"><a href="{{pathFor 'searchResultPage' _id=project._id }}" role="tab">Generator</a></li>
+      <li class="{{tabClass 'chat'}}"><a href="{{pathFor 'messages' _id=project._id }}" role="tab">Chat</a></li>
+    </ul>
+</template>

@@ -1,14 +1,6 @@
 <template name="projectPage">
-  <div class="project-title">
-    <h1>{{project.title}}</h1>
-  </div>
-
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li class="active"><a href="{{pathFor 'newProjectPage' _id=project._id }}" role="tab">Candidates list</a></li>
-    <li><a href="{{pathFor 'searchResultPage' _id=project._id }}" role="tab">Search tool</a></li>
-    <li><a href="{{pathFor 'messages' _id=project._id }}" role="tab">Chat</a></li>
-  </ul>
+  
+  {{>projectHeader}}
 
   <!-- Tab panes -->
   <div class="tab-content">
@@ -20,8 +12,8 @@
       {{/if}}
 
       <ul class="nav nav-pills">
-        <li class="{{tabClass 'best'}}"><a class="remove-positions" href="{{pathFor 'bestProjectPage' _id=project._id}}">Best</a></li>
-        <li class="{{tabClass 'new'}}"><a class="remove-positions" href="{{pathFor 'newProjectPage' _id=project._id }}">Newest</a></li>
+        <li class="{{pillClass 'best'}}"><a class="remove-positions" href="{{pathFor 'bestProjectPage' _id=project._id}}">Best</a></li>
+        <li class="{{pillClass 'new'}}"><a class="remove-positions" href="{{pathFor 'newProjectPage' _id=project._id }}">Newest</a></li>
       </ul>
       
       {{> postsList}}

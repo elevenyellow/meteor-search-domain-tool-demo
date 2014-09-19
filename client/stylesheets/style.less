@@ -20,23 +20,24 @@
 
 // .debug(@icon-font-path);
 
+@screen-lg: 992px;
+@container-large-desktop:      ((940px + @grid-gutter-width));
+
 @icon-font-path:  "/bootstrap-3.2.0/fonts/";
 @flat-icon-font-path:  "/Flat-UI-master/fonts/glyphicons/";
 
 @local-font-path: "/Flat-UI-master/fonts/lato/";
 
 .grid-block, .main, .post, .comments li, .comment-form {
-    background: @clouds;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
+    background: white;
+    border: 1px solid @silver;
+    border-radius: 6px;
     padding: 10px;
     margin-bottom: 10px;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    // -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    // -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+
 }
 
 body {
@@ -105,7 +106,7 @@ a:hover{
         float: left;
         position: relative;
         color: @gray-light;
-        margin: 3px 0 0 6px;
+        margin: -3px 0 0 3px;
         .thumb {
             position: absolute;
             padding: 1px;
@@ -128,7 +129,7 @@ a:hover{
             left: -6px;
             position: absolute;
             text-align: center;
-            top: 19px;
+            top: 22px;
             width: 30px;
             font-size: 14px;
             color:@wet-asphalt;
@@ -174,8 +175,12 @@ a:hover{
             font-size: 12px;
             padding: 4px 5px 0 0;
             line-height: 1;
-            .glyphicon {
-                padding-right: 2px;
+            .icon {
+                padding: 1px 1px 0 0;
+                float: left;
+            }
+            .user{
+                float: left;
             }
         }
         .comments {
@@ -205,7 +210,7 @@ a:hover{
             bottom: 12px;
             right: 28px;
             font-size: 16px;
-            color: @brand-danger;
+            color: @pomegranate;
             cursor: pointer;
         }
         .remove-item:hover {
@@ -364,7 +369,7 @@ a:hover{
             bottom: 12px;
             right: 15px;
             font-size: 16px;
-            color: @brand-danger;
+            color: @pomegranate;
             cursor: pointer;
         }
         .remove-from-candidates:hover {
@@ -386,14 +391,14 @@ a:hover{
 
     .remove-all{
         float:right;
-        color: @brand-danger;
+        color: @pomegranate;
         cursor: pointer;
         font-size: 14px;
         padding: 5px;
     }
     .stop-search{
         float:left;
-        color: @brand-danger;
+        color: @pomegranate;
         cursor: pointer;
         font-size: 14px;
         padding: 5px;

@@ -3,8 +3,8 @@
     <!-- <a href="#" class="upvote btn {{upvotedClass}}">⬆</a> -->
 
     <div class="voting">
-      <div class="thumb up {{upVotedClass}}"><span class="glyphicon glyphicon-thumbs-up"></span></div>
-      <div class="thumb down {{downVotedClass}}"><span class="glyphicon glyphicon-thumbs-down"></span></div>
+      <div class="thumb up {{upVotedClass}}"><span class="fui-triangle-up"></span></div>
+      <div class="thumb down {{downVotedClass}}"><span class="fui-triangle-down"></span></div>
       <div class="votes-count">{{votes}}</div>
 
     </div>
@@ -20,8 +20,8 @@
       <p>
         <!-- {{pluralize votes "Vote"}}, -->
         <!-- <div class="author">by {{author}}</div> -->
-        {{#each upvoters}}<div class="voter"><span class="glyphicon glyphicon-thumbs-up"></span>{{this}}</div> {{/each}}
-        {{#each downvoters}}<div class="voter"><span class="glyphicon glyphicon-thumbs-down"></span>{{this}}</div> {{/each}}
+        {{#each upvoters}}<div class="voter"><div class="icon fui-triangle-up"></div><div class="user">{{this}}</div></div> {{/each}}
+        {{#each downvoters}}<div class="voter"><div class="icon fui-triangle-down"></div><div class="user">{{this}}</div></div> {{/each}}
         <!-- {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}} -->
       </p>
       <div class="clearfix"></div>
