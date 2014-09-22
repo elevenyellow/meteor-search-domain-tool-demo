@@ -15,7 +15,8 @@ meteorhacks:npm
 npm-container
 mrt:iron-router-progress
 sacha:spin
-houston:admin
 meteorhacks:kadira
 meteorhacks:zones
 ian:accounts-ui-bootstrap-3
+houston:admin
+

@@ -186,17 +186,17 @@ a:hover{
         .comments {
             color: @brand-primary;
             position: absolute;
-            top: 13px;
-            right: 15px;
+            top: 5px;
+            right: 10px;
             font-size: 15px;
             .icon {
-                padding: 2px 5px 0 0;
+                padding: 3px 0 0 0;
                 float: left;
             }
             .comments-count {
                 float: left;
                 font-size: 14px;
-                padding: 3px 0 0 0;
+                padding: 3px 5px 0 0;
             }
         }
         .comments:focus {
@@ -207,8 +207,8 @@ a:hover{
         }
         .remove-item {
             position: absolute;
-            bottom: 12px;
-            right: 28px;
+            bottom: 10px;
+            right: 10px;
             font-size: 16px;
             color: @pomegranate;
             cursor: pointer;
@@ -346,7 +346,7 @@ a:hover{
         position: relative;
         .add-to-candidates{
             float: left;
-            color:@brand-success;
+            color:@green-sea;
             cursor: pointer;
             margin-top: 2px;
             line-height: 1;
@@ -412,7 +412,7 @@ a:hover{
     }
     .pause-search{
         float:left;
-        color: @brand-info;
+        color: @belize-hole;
         cursor: pointer;
         font-size: 14px;
         padding: 5px;
@@ -423,7 +423,7 @@ a:hover{
     }
     .resume-search{
         float:left;
-        color: @brand-success;
+        color: @green-sea;
         cursor: pointer;
         font-size: 14px;
         padding: 5px;
@@ -464,19 +464,19 @@ a:hover{
 
 #login-dropdown-list{
     bottom:2px;
-    a {
+    a.dropdown-toggle {
         padding: 15px 7px;
         font-size: 14px;
         font-weight: 700;
         line-height: 23px;
         color: #fff;
     }
-    a:hover{
+    a.dropdown-toggle:hover{
         color: @green-sea;
         border-top-color: @green-sea;
         border-bottom-color: @green-sea;
     }
-    a:hover .caret{
+    a.dropdown-toggle:hover .caret{
         border-bottom-color: @turquoise;
         border-top-color: @turquoise;
     }
@@ -491,6 +491,7 @@ a:hover{
 
     a:hover, .project:hover, .add-project:hover{
         .opacity(0.8);
+        // transition: .25s;
     }
 
     h3{

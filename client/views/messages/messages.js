@@ -44,6 +44,7 @@ Template.messages.rendered = function() {
   // console.log('Template.messages.rendered');
   resizer();
   $('.messages-wp').scrollTop($('.messages-wp').prop('scrollHeight'));
+  $('#message-content-input').focus();
 };
 
 Template.message.rendered = function() {
