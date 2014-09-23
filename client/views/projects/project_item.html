@@ -1,8 +1,9 @@
 <template name="projectItem">
-    <a href="{{pathFor 'projectPage'}}">
+    
         <div class="main project">
-            <h3>{{this.title}}</h3>
+            <a href="{{pathFor 'projectPage'}}"><h3>{{this.title}}</h3> </a>
+            <div class="remove-project"><span class="fui-trash"></span></div>
         </div>
-    </a>
+   
   
 </template>

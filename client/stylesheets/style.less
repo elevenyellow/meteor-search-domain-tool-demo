@@ -488,18 +488,29 @@ a:hover{
 }
 
 .projects{
+    .project{
+        position: relative;
+        overflow: auto;
+        a:hover, .project:hover, .add-project:hover{
+            .opacity(0.8);
+            // transition: .25s;
+        }
 
-    a:hover, .project:hover, .add-project:hover{
-        .opacity(0.8);
-        // transition: .25s;
+        h3{
+            font-size: 17px;
+            color: @wet-asphalt;
+            float: left;
+        }
+        .remove-project {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: @pomegranate;
+            cursor: pointer;
+        }
     }
 
-    h3{
-        font-size: 17px;
-        color: @wet-asphalt;
-    }
-
-    .add-project{
+    .add-project {
         font-size: 17px;
         color: @wet-asphalt;
         .icon{

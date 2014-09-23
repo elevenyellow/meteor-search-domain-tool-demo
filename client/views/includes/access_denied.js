@@ -3,6 +3,5 @@ Template.accessDenied.events({
         e.preventDefault();
         e.stopPropagation();
         $('#login-dropdown-list .dropdown-toggle').dropdown('toggle');
-        console.log("calling dropdown");
     }
 });

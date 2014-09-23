@@ -33,6 +33,7 @@ Meteor.methods({
       ownerId: user._id, 
       owner: user.username, 
       submitted: new Date().getTime(),
+      collaborators: [user._id],
     });
     
     var projectId = Projects.insert(project);
@@ -40,5 +41,54 @@ Meteor.methods({
     
     return projectId;
   },
+
+  removeProject: function(projectId) {
+    var user = Meteor.user();
+    // ensure the user is logged in
+    if (!user)
+      throw new Meteor.Error(401, "You need to login to remove a project");
+
+    var project = Projects.findOne(projectId);
+    if (user._id != project.ownerId) {
+      throw new Meteor.Error(401, "You need be the owner to remove a project");
+    } else {
+      console.log("removing project:", project.title);
+      // todo: remove project, project posts and posts comments
+      var projectPosts = Posts.find({projectId: projectId}).fetch();
+      //console.log("projectPosts:", projectPosts);
+
+
+      for (var i = 0; i < projectPosts.length; i++) {
+        console.log("projectPost:", projectPosts[i].title);
+        // var postComments = Comments.find({postId:projectPosts[i]._id}).fetch();
+        // console.log("postComments:", postComments);
+        Comments.remove({postId:projectPosts[i]._id});
+
+
+      };
+
+      Messages.remove({projectId: projectId});
+      Projects.remove(projectId);
+    }
+
+  },
+
+  addCollaborator: function(projectId) {
+    var user = Meteor.user();
+    // ensure the user is logged in
+    if (!user)
+      throw new Meteor.Error(401, "You need to login to add it to your projects");
+
+    var project = Projects.findOne(projectId);
+    Projets.update({
+      _id: projectId, 
+      collaborators: {$nin: [user.username]}
+    }, {
+      $addToSet: {collaborators: user.username}
+    });
+
+  },
+
+
   
 });
