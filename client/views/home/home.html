@@ -1,3 +1,17 @@
 <template name="home">
-    {{>projectsList}}
+    {{#if currentUser}}
+        {{>projectsList}}
+    {{else}}
+        <div class="jumbotron main">
+            <div class="container">
+                <h1>Find your domain now!</h1>
+                <p>
+                    The simplest way of finding a domain name for your project
+                </p>
+                <p>
+                    <a href="{{pathFor 'projectsList'}}" class="btn btn-primary btn-lg">Find a Domain</a>
+                </p>
+            </div>
+        </div>
+    {{/if}}
 </template>

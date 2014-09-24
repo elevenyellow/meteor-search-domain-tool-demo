@@ -1,6 +1,7 @@
 
 @import "/client/stylesheets/bootstrap-3.2.0/less/bootstrap.import.less";
 @import "/client/stylesheets/Flat-UI-master/less/flat-ui.import.less";
+@import "/client/stylesheets/font-awesome-4.2.0/less/font-awesome.import.less";
 
 // .debug(@var) {
 //   &:after {
@@ -27,6 +28,8 @@
 @flat-icon-font-path:  "/Flat-UI-master/fonts/glyphicons/";
 
 @local-font-path: "/Flat-UI-master/fonts/lato/";
+
+@fa-font-path: "/font-awesome-4.2.0/fonts";
 
 .grid-block, .main, .post, .comments li, .comment-form {
     background: white;
@@ -488,27 +491,6 @@ a:hover{
 }
 
 .projects{
-    .project{
-        position: relative;
-        overflow: auto;
-        a:hover, .project:hover, .add-project:hover{
-            .opacity(0.8);
-            // transition: .25s;
-        }
-
-        h3{
-            font-size: 17px;
-            color: @wet-asphalt;
-            float: left;
-        }
-        .remove-project {
-            position: absolute;
-            right: 10px;
-            top: 10px;
-            color: @pomegranate;
-            cursor: pointer;
-        }
-    }
 
     .add-project {
         font-size: 17px;
@@ -516,5 +498,48 @@ a:hover{
         .icon{
             color:@green-sea;
         }
+    }
+}
+
+.project{
+    position: relative;
+    overflow: auto;
+    a:hover, .project:hover, .add-project:hover{
+        .opacity(0.8);
+        // transition: .25s;
+    }
+
+    h3{
+        font-size: 19px;
+        color: @wet-asphalt;
+        float: left;
+    }
+    
+    .remove-project {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: @pomegranate;
+        cursor: pointer;
+    }
+    .share-project {
+        position: absolute;
+        right: 35px;
+        top: 9px;
+        color: @green-sea;
+        cursor: pointer;
+        font-size: 21px;
+    }
+    .edit-project {
+        position: absolute;
+        right: 60px;
+        top: 9px;
+        color: #2980b9;
+        cursor: pointer;
+        font-size: 22px;
+        display: none;
+    }
+    .edit-project.visible {
+        display: block;
     }
 }

@@ -1,7 +1,11 @@
 <template name="projectHeader">
-    <div class="project-title">
+   <!--  <div class="project-title">
       <h1>{{project.title}}</h1>
-    </div>
+    </div> -->
+
+    {{#with project}}
+        {{>projectItem}}
+    {{/with}}
 
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">

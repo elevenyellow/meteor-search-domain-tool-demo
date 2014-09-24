@@ -22,7 +22,9 @@ Meteor.publish('notifications', function() {
 
 Meteor.publish('projects', function() {
   //return Projects.find({ownerId:this.userId});
-  return Projects.find();
+  return Projects.find({
+    $or: [ {collaborators: {$in: [this.userId]} }, { ownerId: this.userId } ]
+  });
 });
 
 Meteor.publish('singleProject', function(id) {

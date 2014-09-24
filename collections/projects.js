@@ -1,17 +1,17 @@
 Projects = new Meteor.Collection('projects');
 
 
-// Projects.allow({
-//   update: ownsDocument,
-//   remove: ownsDocument
-// });
+Projects.allow({
+  update: ownsDocument,
+  remove: ownsDocument
+});
 
-// Projects.deny({
-//   update: function(userId, project, fieldNames) {
-//     // may only edit the following two fields:
-//     return (_.without(fieldNames, 'title').length > 0);
-//   }
-// });
+Projects.deny({
+  update: function(userId, project, fieldNames) {
+    // may only edit the following two fields:
+    return (_.without(fieldNames, 'title').length > 0);
+  }
+});
 
 
 Meteor.methods({
@@ -50,7 +50,14 @@ Meteor.methods({
 
     var project = Projects.findOne(projectId);
     if (user._id != project.ownerId) {
-      throw new Meteor.Error(401, "You need be the owner to remove a project");
+      console.log("removing collaborator from project:", project.title);
+      Projects.update({
+            _id: projectId, 
+            collaborators: {$in: [user._id]}
+          }, {
+            $pull: {collaborators: user._id}
+          });
+
     } else {
       console.log("removing project:", project.title);
       // todo: remove project, project posts and posts comments
@@ -80,12 +87,14 @@ Meteor.methods({
       throw new Meteor.Error(401, "You need to login to add it to your projects");
 
     var project = Projects.findOne(projectId);
-    Projets.update({
+    Projects.update({
       _id: projectId, 
-      collaborators: {$nin: [user.username]}
+      collaborators: {$nin: [user._id]}
     }, {
-      $addToSet: {collaborators: user.username}
+      $addToSet: {collaborators: user._id}
     });
+
+    console.log("called addCollaborator:", user._id, projectId);
 
   },
 

@@ -1,7 +1,9 @@
 <template name="projectItem">
     
         <div class="main project">
-            <a href="{{pathFor 'projectPage'}}"><h3>{{this.title}}</h3> </a>
+            <a href="{{pathFor 'projectPage'}}"><h3>{{title}}</h3> </a>
+            <div class="edit-project {{editProjectClass}}"><i class="fa fa-edit"></i></div>
+            <div class="share-project"><i class="fa fa-share-alt"></i></div>
             <div class="remove-project"><span class="fui-trash"></span></div>
         </div>
    

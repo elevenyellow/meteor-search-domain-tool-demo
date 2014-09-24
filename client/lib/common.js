@@ -7,3 +7,6 @@ isDomainAvailable = function (domain, callback) {
   // console.log("calling isDomainAvailable from client for ", domain);
   Meteor.call('isDomainAvailable', domain, callback);
 }
+
+
+
