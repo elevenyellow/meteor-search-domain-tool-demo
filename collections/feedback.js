@@ -25,7 +25,13 @@ Meteor.methods({
     
     var feedbackId = Feedbacks.insert(feedback);
 
-    console.log('feedbackId after insert: ' + feedbackId)
+    console.log('feedbackId after insert: ' + feedbackId);
+
+    Meteor.call('sendEmail',
+                'chemuto@gmail.com',
+                'wat@elevenyellow.com',
+                '[namecracy.com]',
+                feedbackAttributes.content);
     
 
     return feedbackId;
