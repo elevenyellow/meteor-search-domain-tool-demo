@@ -21,5 +21,4 @@ Template.projectHeader.rendered = function() {
         Meteor.call('addCollaborator', this.data.project._id);
     }
 
-    $('#myModal').modal();
 }

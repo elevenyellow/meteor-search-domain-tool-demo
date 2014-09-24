@@ -543,3 +543,37 @@ a:hover{
         display: block;
     }
 }
+
+#feedback { 
+    height: 104px; 
+    width: 104px; 
+    position: fixed; 
+    top: 40%; 
+    z-index: 1000;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg); 
+    -o-transform: rotate(-90deg); 
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#feedback a { 
+    display: block;
+    // background: #f00;
+    background: @belize-hole;
+    height: 38px;
+    width: 104px;
+    padding: 4px 14px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    // border-bottom: solid 1px #333;
+    // border-left: solid 1px #333;
+    // border-right: solid 1px #fff;
+}
+
+#feedback a:hover { 
+    background: @peter-river; 
+}
