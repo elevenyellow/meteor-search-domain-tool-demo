@@ -6,52 +6,59 @@
       {{> yield}}
     </div>
   </div>
+  {{#if currentUser}}
 
-  <div class="modal fade" id="share-project-modal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h4 class="modal-title">Share to add collaborators</h4>
-        </div>
-        <div class="modal-body">
-          <p></p>
-        </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div> -->
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
+      <div class="modal fade" id="share-project-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title">Share to add collaborators</h4>
+            </div>
+            <div class="modal-body">
+              <p></p>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div> -->
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
 
-  <div class="hidden-xs" id="feedback">
-    <a href="#">feedback</a>
-  </div>
+  
+      <div class="hidden-xs" id="feedback">
+        <a href="#">feedback</a>
+      </div>
 
-  <div class="modal fade" id="feedback-modal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h4 class="modal-title">Send us your feedback</h4>
-        </div>
-        <div class="modal-body">
-            <form id="feedback-form" action="" method="POST" role="form">
-                <!-- <legend>Form title</legend> -->
 
-                <!-- <div class="form-group">
-                  <label for="">label</label>
-                  <input type="text" class="form-control" id="" placeholder="Input field">
-                </div> -->
-                <textarea id="feedback-textarea" name="content" class="form-control" rows="3"></textarea>
-            </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button id="feedback-submit" type="button" class="btn btn-primary">Submit</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
+      <div class="modal fade" id="feedback-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title">Send us your feedback</h4>
+            </div>
+            <div class="modal-body">
+                <form id="feedback-form" action="" method="POST" role="form">
+                    <!-- <legend>Form title</legend> -->
+
+                    <div class="form-group">
+                      <label for="feedback-email">Your email (optional)</label>
+                      <input type="email" class="form-control" id="feedback-email" placeholder="you@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback-textarea">Your feedback</label>
+                        <textarea id="feedback-textarea" name="content" class="form-control" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button id="feedback-submit" type="button" class="btn btn-primary" data-loading-text="Sending...">Send</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+  {{/if}}
 
 </template>

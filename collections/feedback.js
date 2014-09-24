@@ -3,6 +3,7 @@ Feedbacks = new Meteor.Collection('feedbacks');
 
 Meteor.methods({
   feedback: function(feedbackAttributes) {
+    this.unblock();
     var user = Meteor.user()
       
     // ensure the user is logged in
@@ -17,7 +18,7 @@ Meteor.methods({
     
     
     // pick out the whitelisted keys
-    var feedback = _.extend(_.pick(feedbackAttributes, 'content'), {
+    var feedback = _.extend(_.pick(feedbackAttributes, 'content', 'email'), {
       userId: user._id, 
       author: user.username, 
       submitted: new Date().getTime(),
@@ -25,13 +26,15 @@ Meteor.methods({
     
     var feedbackId = Feedbacks.insert(feedback);
 
-    console.log('feedbackId after insert: ' + feedbackId);
+    // console.log('feedbackId after insert: ' + feedbackId);
+
+    mailContent = 'User: ' + user.username + '\nUserId: ' + user._id + '\nemail: ' + feedbackAttributes.email + '\n\nFeedback: \n' + feedbackAttributes.content;
 
     Meteor.call('sendEmail',
-                'chemuto@gmail.com',
                 'wat@elevenyellow.com',
-                '[namecracy.com]',
-                feedbackAttributes.content);
+                'wat@elevenyellow.com',
+                '[namecracy.com] Feedback',
+                mailContent);
     
 
     return feedbackId;

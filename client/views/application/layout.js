@@ -20,18 +20,21 @@ Template.layout.events({
         e.stopPropagation();
         var feedback = {
           content: $('#feedback-textarea').val(),
+          email: $('#feedback-email').val(),
         }
 
-        console.log("feedback:", feedback);
+        // console.log("feedback:", feedback);
 
         Meteor.call('feedback', feedback, function(error, id) {
           if (error) {
             // display the error to the user
             throwError(error.reason);
           } else {
-            
+            console.log('feedback callback');
           }
         });
+
+        $('#feedback-modal').modal('hide');
         
     }
 
