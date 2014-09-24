@@ -45,10 +45,13 @@ Template.messages.rendered = function() {
   resizer();
   $('.messages-wp').scrollTop($('.messages-wp').prop('scrollHeight'));
   $('#message-content-input').focus();
+
 };
 
 Template.message.rendered = function() {
   $('.messages-wp').scrollTop($('.messages-wp').prop('scrollHeight'));
+  var total = Messages.find().count();
+  Session.set('readMessages', total);
 };
 
 Template.messages.created = function() {

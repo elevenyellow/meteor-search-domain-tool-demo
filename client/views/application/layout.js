@@ -31,6 +31,7 @@ Template.layout.events({
             throwError(error.reason);
           } else {
             console.log('feedback callback');
+            $('#feedback-textarea').val('');
           }
         });
 

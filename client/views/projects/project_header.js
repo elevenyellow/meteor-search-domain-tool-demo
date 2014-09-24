@@ -22,3 +22,13 @@ Template.projectHeader.rendered = function() {
     }
 
 }
+
+
+Template.unreadMessages.helpers({
+    unreadMessages: function () {
+        var total = Messages.find().count();
+        var read = Session.get('readMessages') || 0;
+        return total-read;
+    },
+    
+});
