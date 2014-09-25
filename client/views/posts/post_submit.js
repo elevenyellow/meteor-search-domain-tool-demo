@@ -17,8 +17,18 @@ Template.postSubmit.events({
         
       }
     });
-
-
+  },
+  'click #post-submit-input-button': function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    // console.log('click #post-submit-input-button');
+    var input = $('#post-submit-input-id').val();
+    // console.log('input', input);
+    if(input){
+      $('#add-candidate-form').submit();
+      $('#post-submit-input-id').val('');
+    }
+    
 
   }
 });

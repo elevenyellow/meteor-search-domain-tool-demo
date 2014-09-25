@@ -88,6 +88,15 @@ a:hover{
     font-weight: bold;
 }
 
+
+ul.nav-tabs{
+    font-size: 14px;
+    @media (min-width: @screen-md-min) {
+        font-size: 16px;
+    }
+
+}
+
 #spinner {
     height: 300px;
 }
@@ -324,21 +333,21 @@ a:hover{
         right: 0;
     }
 }
-#post-submit-input-wp {
-    @media (min-width:@screen-sm-min) {
-        width: 100%;
-    }
-}
-#post-submit-input-id {
-    width: 75%;
-    display: inline-block;
-    @media (min-width:@screen-sm-min) {
-        width: 35%;
-    }
-    @media (min-width:@screen-lg-min) {
-        width: 30%;
-    }
-}
+// #post-submit-input-wp {
+//     @media (min-width:@screen-sm-min) {
+//         width: 100%;
+//     }
+// }
+// #post-submit-input-id {
+//     width: 75%;
+//     display: inline-block;
+//     @media (min-width:@screen-sm-min) {
+//         width: 35%;
+//     }
+//     @media (min-width:@screen-lg-min) {
+//         width: 30%;
+//     }
+// }
 
 #search-tool-results {
     list-style: none;
@@ -488,6 +497,21 @@ a:hover{
 #add-candidate-form, #add-tag-form{
     padding:15px 0 10px 0;
 
+}
+
+#post-submit-input-wp{
+    height: 23px;
+}
+
+#add-candidate-form {
+    .icon{
+        position: absolute;
+        top: 11px;
+        right: 12px;
+        font-size: 21px;
+        color: #16a085;
+        cursor: pointer;
+    }
 }
 
 .projects{

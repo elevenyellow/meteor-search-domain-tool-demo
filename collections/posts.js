@@ -50,7 +50,11 @@ Meteor.methods({
     var postId = Posts.insert(post);
 
     console.log('postId after insert: ' + postId)
-    Meteor.call('checkAvailableDomains', postId);
+    
+    if(!this.isSimulation){
+      Meteor.call('checkAvailableDomains', postId);
+    }
+    
     
 
     return postId;
