@@ -1,9 +1,19 @@
 <template name="layout">
-  {{>header}}
-  <div class="container">
-    {{> errors}}
-    <div id="main" class="row-fluid">
-      {{> yield}}
+  <div class="wrapper">
+    {{>header}}
+    <div class="container">
+      {{> errors}}
+      <div id="main" class="row-fluid">
+        {{> yield}}
+      </div>
+    </div>
+
+    <div class="push"></div>
+  </div>  
+  <div class="footer">
+    <div class="container">
+      Built with <a target="_blank" href="https://www.meteor.com/">Meteor.js</a>
+      <a class="company-link" target="_blank" href="http://www.elevenyellow.com/">Elevenyellow</a>
     </div>
   </div>
   {{#if currentUser}}

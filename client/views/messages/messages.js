@@ -1,5 +1,5 @@
 function resizer() {
-    var newHeight = ''+$(window).height()-$('.nav-tabs').position().top-148+'px';
+    var newHeight = ''+$(window).height()-$('.nav-tabs').position().top-168+'px';
     // console.log('newHeight', newHeight);
     $('.messages-wp').css('height', newHeight);
 }

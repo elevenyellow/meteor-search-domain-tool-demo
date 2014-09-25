@@ -505,8 +505,11 @@ ul.nav-tabs{
 
 .message-input{
     position: relative;
-    padding: 10px 0 20px 0;     
+    padding: 10px 0 0 0;     
     bottom: 0;
+    .form-group{
+        margin-bottom: 0;
+    }
 }
 
 .message {
@@ -660,5 +663,39 @@ ul.nav-tabs{
     
     h4{
         font-size: 20px;
+    }
+}
+
+
+
+/* sticky footer */
+
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -40px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 40px; /* .push must be the same height as .footer */
+}
+
+/* end of sticky footer */
+
+
+.footer{
+    border-top: 1px solid @silver;
+    font-size: 12px;
+    padding: 10px;
+    color: @wet-asphalt;
+    a.company-link{
+        float: right;
+        padding:0 5px 0 0; 
     }
 }
