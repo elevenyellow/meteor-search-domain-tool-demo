@@ -16,7 +16,7 @@ Template.projectItem.events({
       e.stopPropagation();
       e.preventDefault();
       console.log('clicked .share-project');
-      $('#share-project-modal .modal-body p').html(Meteor.absoluteUrl(Router.path('projectPage', {_id: this._id}).substring(1)));
+      $('#share-project-modal .modal-body input').val(Meteor.absoluteUrl(Router.path('projectPage', {_id: this._id}).substring(1)));
       $('#share-project-modal').modal('show');
       // Meteor.call('removeProject', this._id);
     },

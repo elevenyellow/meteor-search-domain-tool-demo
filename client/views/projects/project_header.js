@@ -6,6 +6,13 @@ Template.projectHeader.helpers({
             return ''
         }
     },
+    closedProjectHeaderAlertClass: function () {
+        if(Session.equals('closedProjectHeaderAlert', true)){
+            return 'hidden'
+        } else {
+            return ''
+        }
+    },
     
 });
 
@@ -21,6 +28,8 @@ Template.projectHeader.rendered = function() {
         Meteor.call('addCollaborator', this.data.project._id);
     }
 
+    Session.setDefault('closedProjectHeaderAlert', false);
+
 }
 
 Template.projectHeader.events({
@@ -29,7 +38,12 @@ Template.projectHeader.events({
         e.preventDefault();
         console.log('clicked .trigger-share');
         $('.share-project').click();
-      }
+      },
+
+    'click .close': function(){
+        console.log('click .close');
+        Session.set('closedProjectHeaderAlert', true);
+    }
 
       
 });

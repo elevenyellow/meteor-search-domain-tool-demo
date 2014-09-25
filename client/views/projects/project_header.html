@@ -3,9 +3,9 @@
       <h1>{{project.title}}</h1>
     </div> -->
 
-    <div class="alert alert-info alert-dismissible" role="alert">
+    <div class="{{closedProjectHeaderAlertClass}} alert alert-info alert-dismissible" role="alert">
       <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-      <i class="fa fa-info-circle"></i> This is the project page. Here you can <a href="{{pathFor 'newProjectPage' _id=project._id }}" class="alert-link">add potential names</a> to the list (domain name availability will be checked), <a href="{{pathFor 'searchResultPage' _id=project._id }}" class="alert-link">generate name ideas</a> based on a keywords and <a href="{{pathFor 'messages' _id=project._id }}" class="alert-link">chat</a> with your team. Don't forget to <a href="#" class="trigger-share alert-link">share it</a>!
+      <i class="fa fa-info-circle"></i> <span class="hidden-xs">This is the project page. Here you can <a href="{{pathFor 'newProjectPage' _id=project._id }}" class="alert-link">add potential names</a> to the list (domain name availability will be checked), <a href="{{pathFor 'searchResultPage' _id=project._id }}" class="alert-link">generate name ideas</a> based on a keywords and <a href="{{pathFor 'messages' _id=project._id }}" class="alert-link">chat</a> with your team. To add more people just <a href="#" class="trigger-share alert-link">share it</a>!</span><span class="visible-xs-inline"><a href="#" class="trigger-share alert-link">Share it</a> to add more collaborators</span>
     </div>
 
     {{#with project}}
