@@ -49,7 +49,7 @@ Meteor.methods({
     
     var postId = Posts.insert(post);
 
-    console.log('postId after insert: ' + postId)
+    // console.log('postId after insert: ' + postId)
     
     if(!this.isSimulation){
       Meteor.call('checkAvailableDomains', postId);
@@ -143,7 +143,7 @@ Meteor.methods({
     
     var url = "https://instantdomainsearch.com/all/" + domain + "?tlds=com,net,org,in,io,es&limit=20&hilite=strong";
     //return Meteor.http.call("GET", "http://search.twitter.com/search.json?q=perkytweets");
-    console.log("calling checkDomainAvailability from the server with url = " + url);
+    // console.log("calling checkDomainAvailability from the server with url = " + url);
     
     Meteor.http.get(url, function(error, result){
         if(error){
@@ -162,8 +162,8 @@ Meteor.methods({
                         availableDomains.push(item.tld);
                     }
                 };
-                console.log("availableDomains in server:" + availableDomains);
-                console.log("postId:" + postId);
+                // console.log("availableDomains in server:" + availableDomains);
+                // console.log("postId:" + postId);
                 Posts.update(
                   postId, 
                   {$set: {availableDomains: availableDomains}}

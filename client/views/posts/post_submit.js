@@ -18,7 +18,7 @@ Template.postSubmit.events({
       }
     });
   },
-  'click #post-submit-input-button': function(e){
+  'click #add-candidate-form .icon': function(e){
     e.preventDefault();
     e.stopPropagation();
     // console.log('click #post-submit-input-button');

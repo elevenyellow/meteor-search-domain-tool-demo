@@ -58,7 +58,7 @@ function resumeSearch(){
 function startSearch() {
     // console.log('startSearch()');
     $('#add-tag-form-fieldset').prop('disabled', true);
-    searchText =  $('#post-submit-input-id').val();
+    searchText =  $('#add-tag-input-id').val();
     // console.log("searchText: ", searchText);
     $('.stop-search').removeClass('disabled');
     $('.pause-search').removeClass('disabled');
@@ -92,7 +92,18 @@ Template.searchResultPage.events({
     // console.log('submit #add-tag-form');
     e.preventDefault();
     startSearch();
+  },
 
+  'click #add-tag-form .icon': function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    // console.log('click #post-submit-input-button');
+    var input = $('#add-tag-input-id').val();
+    // console.log('input', input);
+    if(input){
+      $('#add-tag-form').submit();
+      $('#add-tag-input-id').val('');
+    }
   },
 
   'click .remove-all': function(e) {

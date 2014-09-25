@@ -5,13 +5,13 @@
   <!-- Tab panes -->
   <div class="tab-content">
     <div class="tab-pane active" id="search-tool">
-      <form class="form-inline" id="add-tag-form" role="form">
+      <form id="add-tag-form" role="form">
           <fieldset id="add-tag-form-fieldset" {{fieldsetAttributes}} disabled={{#unless isStopped}}"true"{{/unless}}>
               <input type="hidden" name="projectId" value="{{project._id}}">
-              <div class="form-group" id="post-submit-input-wp">
-                  <label class="sr-only" for="post-submit-input-id">Tags</label>
-                  <input value="{{searchText}}" type="text" class="form-control" id="post-submit-input-id" name="title" placeholder="Enter one word">
-                  <button type="submit" class="btn btn-primary">Search</button>
+              <div class="form-group">
+                  <label class="sr-only" for="add-tag-input-id">Tags</label>
+                  <input value="{{searchText}}" type="text" class="form-control" id="add-tag-input-id" name="title" placeholder="Enter one word">
+                  <i class="icon fa fa-plus"></i>
               </div>
           </fieldset>
       </form>
