@@ -51,7 +51,8 @@ Template.messages.rendered = function() {
 Template.message.rendered = function() {
   $('.messages-wp').scrollTop($('.messages-wp').prop('scrollHeight'));
   var total = Messages.find().count();
-  Session.set('readMessages', total);
+  // console.log('message.projectId', this.data.projectId);
+  Session.set('readMessages'+this.data.projectId, total);
 };
 
 Template.messages.created = function() {

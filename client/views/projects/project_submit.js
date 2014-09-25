@@ -19,3 +19,8 @@ Template.projectSubmit.events({
     });
   }
 });
+
+Template.projectSubmit.rendered = function(){
+  $('#project-title').focus();
+
+};

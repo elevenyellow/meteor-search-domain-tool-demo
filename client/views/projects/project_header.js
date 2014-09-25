@@ -16,7 +16,7 @@ Template.projectHeader.rendered = function() {
     var userId = Meteor.userId();
     // console.log('userId', userId);
     var isCollaborator = _.contains(this.data.project.collaborators, Meteor.userId());
-    console.log('isCollaborator', isCollaborator);
+    // console.log('isCollaborator', isCollaborator);
     if(!isCollaborator){
         Meteor.call('addCollaborator', this.data.project._id);
     }
@@ -27,7 +27,8 @@ Template.projectHeader.rendered = function() {
 Template.unreadMessages.helpers({
     unreadMessages: function () {
         var total = Messages.find().count();
-        var read = Session.get('readMessages') || 0;
+        // console.log('Template.unreadMessages', this.project._id);
+        var read = Session.get('readMessages'+this.project._id) || 0;
         return total-read;
     },
     

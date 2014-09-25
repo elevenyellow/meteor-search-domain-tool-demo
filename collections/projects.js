@@ -37,7 +37,7 @@ Meteor.methods({
     });
     
     var projectId = Projects.insert(project);
-    console.log("projectId: "+ projectId);
+    // console.log("projectId: "+ projectId);
     
     return projectId;
   },
@@ -50,7 +50,7 @@ Meteor.methods({
 
     var project = Projects.findOne(projectId);
     if (user._id != project.ownerId) {
-      console.log("removing collaborator from project:", project.title);
+      // console.log("removing collaborator from project:", project.title);
       Projects.update({
             _id: projectId, 
             collaborators: {$in: [user._id]}
@@ -59,14 +59,14 @@ Meteor.methods({
           });
 
     } else {
-      console.log("removing project:", project.title);
+      // console.log("removing project:", project.title);
       // todo: remove project, project posts and posts comments
       var projectPosts = Posts.find({projectId: projectId}).fetch();
       //console.log("projectPosts:", projectPosts);
 
 
       for (var i = 0; i < projectPosts.length; i++) {
-        console.log("projectPost:", projectPosts[i].title);
+        // console.log("projectPost:", projectPosts[i].title);
         // var postComments = Comments.find({postId:projectPosts[i]._id}).fetch();
         // console.log("postComments:", postComments);
         Comments.remove({postId:projectPosts[i]._id});
@@ -94,7 +94,7 @@ Meteor.methods({
       $addToSet: {collaborators: user._id}
     });
 
-    console.log("called addCollaborator:", user._id, projectId);
+    // console.log("called addCollaborator:", user._id, projectId);
 
   },
 
