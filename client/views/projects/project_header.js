@@ -23,6 +23,17 @@ Template.projectHeader.rendered = function() {
 
 }
 
+Template.projectHeader.events({
+    'click .trigger-share': function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        console.log('clicked .trigger-share');
+        $('.share-project').click();
+      }
+
+      
+});
+
 
 Template.unreadMessages.helpers({
     unreadMessages: function () {
