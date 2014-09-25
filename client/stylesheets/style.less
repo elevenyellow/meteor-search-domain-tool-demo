@@ -31,6 +31,8 @@
 
 @fa-font-path: "/font-awesome-4.2.0/fonts";
 
+// @navbar-height: 40px;
+
 .grid-block, .main, .post, .comments li, .comment-form {
     background: white;
     border: 1px solid @silver;
@@ -43,9 +45,8 @@
 
 }
 
-body {
-    // background: #eee;
-    // color: #666666;
+body { 
+    padding-top: 62px; 
 }
 
 h1{
@@ -62,7 +63,23 @@ a:hover{
     text-decoration: none;
 }
 .navbar {
+    min-height: 0;
     margin-bottom: 10px;
+    border-radius: 0;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 1px 2px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 1px 2px 0px rgba(50, 50, 50, 0.75);
+    .container{
+        position: relative;
+    }
+}
+
+.navbar-brand {
+    font-size: 20px;
+    line-height: 1.042;
+    height: auto;
+    font-weight: 700;
+    padding: 14px 21px;
 }
 
 .nav-pills{
@@ -318,9 +335,9 @@ ul.nav-tabs{
 /* ############################################# */
 .login-dropdown {
     position: absolute;
-    right: 0;
-    top: 0;
-    padding: 15px;
+    top: 0px;
+    right: 0px;
+    padding: 12px 15px 0 0;
     list-style: none;
     a.dropdown-toggle {
         color: @gray-light;
@@ -333,6 +350,8 @@ ul.nav-tabs{
         right: 0;
     }
 }
+
+
 // #post-submit-input-wp {
 //     @media (min-width:@screen-sm-min) {
 //         width: 100%;
