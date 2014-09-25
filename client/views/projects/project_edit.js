@@ -27,3 +27,8 @@ Template.projectEdit.events({
   
  
 });
+
+Template.projectEdit.rendered = function() {
+  $('#project-title').focus();
+
+};
