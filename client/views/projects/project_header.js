@@ -13,6 +13,7 @@ Template.projectHeader.helpers({
             return ''
         }
     },
+
     
 });
 
@@ -58,3 +59,12 @@ Template.unreadMessages.helpers({
     },
     
 });
+
+Template.userPill.labelClass = function() {
+  if (this.status && this.status.idle)
+    return "label-warning"
+  else if (this.status && this.status.online)
+    return "label-success"
+  else
+    return "label-default"
+};

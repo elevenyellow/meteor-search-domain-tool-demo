@@ -12,6 +12,8 @@
         {{>projectItem}}
     {{/with}}
 
+    <div class="collaborators"><i class="icon fa fa-users"></i> {{#each collaborators }}{{>userPill}}{{/each}}</div>
+
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
       <li class="{{tabClass 'list'}}"><a href="{{pathFor 'newProjectPage' _id=project._id }}" role="tab">Name List</a></li>
@@ -22,4 +24,8 @@
 
 <template name="unreadMessages">
 ({{unreadMessages}})
+</template>
+
+<template name="userPill">
+    <span class="label {{labelClass}}">{{username}}</span>
 </template>
