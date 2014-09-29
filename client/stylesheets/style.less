@@ -111,6 +111,7 @@ ul.nav-tabs{
     @media (min-width: @screen-md-min) {
         font-size: 16px;
     }
+    
 
 }
 
@@ -497,10 +498,14 @@ ul.nav-tabs{
 
 .messages-wp{
     position: relative;
-    padding: 0 0 2px 0;     
+    padding: 5px 0 2px 0;     
     bottom: 0;
     // max-height: 300px;
     overflow-y: auto;
+    border: 1px solid @silver;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 .message-input{
@@ -513,8 +518,14 @@ ul.nav-tabs{
 }
 
 .message {
-    margin: 10px 0 0 0;
+    margin: 4px 0 4px 0;
     font-size: 14px;
+    line-height: 1.2;
+    padding: 0 5px 0 12px;
+    @media (min-width: @screen-md-min) {
+        font-size: 14px;
+    }
+
 }
 
 .dropdown-toggle .caret {
