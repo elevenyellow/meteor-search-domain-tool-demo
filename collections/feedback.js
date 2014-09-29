@@ -31,7 +31,7 @@ Meteor.methods({
     mailContent = 'User: ' + user.username + '\nUserId: ' + user._id + '\nemail: ' + feedbackAttributes.email + '\n\nFeedback: \n' + feedbackAttributes.content;
 
     Meteor.call('sendEmail',
-                'wat@elevenyellow.com',
+                ['wat@elevenyellow.com', 'chemuto@gmail.com'],
                 'wat@elevenyellow.com',
                 '[namecracy.com] Feedback',
                 mailContent);
