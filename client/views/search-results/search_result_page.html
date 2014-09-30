@@ -17,9 +17,12 @@
       </form>
       <div class="main search-results-header">
           <div class="spinner-wp"> <img src="/images/gif-load.gif"></div>
-          <div class="stop-search {{#if isStopped}}disabled{{/if}}"><span class="glyphicon glyphicon-stop"></span> Stop</div>
-          <div class="pause-search {{#unless isRunning}}disabled{{/unless}}"><span class="glyphicon glyphicon-pause"></span> Pause</div>
-          <div class="resume-search {{#unless isPaused}}disabled{{/unless}}"><span class="glyphicon glyphicon-play"></span> Resume</div>
+          <div class="stop-search {{#if isStopped}}disabled{{/if}}"><span class="glyphicon glyphicon-stop"></span> <span class="hidden-xs">Stop</span></div>
+          <div class="pause-search {{#unless isRunning}}disabled{{/unless}}"><span class="glyphicon glyphicon-pause"></span> <span class="hidden-xs">Pause</span></div>
+          <div class="resume-search {{#unless isPaused}}disabled{{/unless}}"><span class="glyphicon glyphicon-play"></span> <span class="hidden-xs">Resume</span></div>
+
+          <div class="results-counter">{{>resultsCounter}}</div>
+
           <div class="remove-all">All <span class="icon fui-trash"></span></div>
       </div>
 
@@ -28,4 +31,8 @@
   </div>
 </div>
 
+</template>
+
+<template name="resultsCounter">
+  {{totalResults}} results
 </template>

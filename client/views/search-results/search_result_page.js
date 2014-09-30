@@ -166,3 +166,9 @@ Template.searchResultPage.helpers ({
   // }, 
 
 });
+
+Template.resultsCounter.helpers ({
+  'totalResults': function() {
+    return SearchResults.find().count();
+  }
+});
